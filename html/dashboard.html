@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+
+                <ul class="navbar-ul">
+
+                    <div class="circle-menu">
+                        <a href="#!" class="cirle-link"><img src="../images/Dashboard/icon-menu.svg" alt=""></a>
+                    </div>
+
+                    <li class="navbar-li"><a href="#!" class="navbar-link">Главная</a></li>
+                    <li class="navbar-li"><a href="#!" class="navbar-link">Гидрометрия</a></li>
+                    <li class="navbar-li"><a href="#!" class="navbar-link">Modsnow</a></li>
+                    <li class="navbar-li"><a href="#!" class="navbar-link">Погода</a></li>
+                    <li class="navbar-li"><a href="#!" class="navbar-link">Нормативные документы</a></li>
+                </ul>
+
+
+                <div class="navbar-logo">
+                    <a href="#!"><img src="../images/Dashboard/logo.png" alt=""></a>
+                </div>
+
+
+                <div class="navbar-date">
+                    <a href="#!" class="navbar-dates">08.06.2024</a>
+                    <a href="#!" class="navbar-dates">15:04:39</a>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="statistic">
+            <div class="container">
+                <div class="statistics">
+                    <!-- CHART - 1 -->
+                    <div class="diagramma-1">
+
+                        <div class="diagramma-title">
+                            <div class="diagramma-titles">
+                                <h2>Сувнинг келиши, м3/cек</h2>
+                                <div class="diagramma-line-1"></div>
+                            </div>
+                            <div class="diagramma-line-2"></div>
+                        </div>
+
+                        <div class="diagramma-nav">
+                            <ul class="diagramma-ul">
+                                <li class="diagramma-li"><a href="suv_kelishi.html" class="diagramma-link">Келиш,
+                                        м³/сек</a></li>
+                                <li class="diagramma-li"><a href="suv_kelishi.html" class="diagramma-link">Чикиш,
+                                        м³/сек</a></li>
+                                <li class="diagramma-li"><a href="suv_kelishi.html" class="diagramma-link">Сув Сатхи,
+                                        м</a></li>
+                                <li class="diagramma-li"><a href="suv_kelishi.html" class="diagramma-link">Cув Ҳажми,
+                                        млн.м³</a></li>
+
+                                <div class="diagramma-left"></div>
+                                <div class="diagramma-right"></div>
+                            </ul>
+                        </div>
+
+                        <div class="diagramma-chart-1">
+                            <canvas id="chart1" width="555px" height="350px"></canvas>
+                        </div>
+
+                        <div class="diagramma-middle-line-1"></div>
+                    </div>
+
+                    <div class="diagramma-2">
+
+                        <div class="diagramma-title-2">
+                            <div class="diagramma-titles-2">
+                                <h2>MODSNOW</h2>
+                                <div class="diagramma-line-2"></div>
+                            </div>
+                            <div class="diagramma-line-3"></div>
+                        </div>
+
+                        <div class="diagramma-2-statistics">
+                            <div class="progress-container" id="progressContainer"></div>
+                        </div>
+
+                        <div class="diagramma-middle-line-2"></div>
+                    </div>
+
+                    <!-- CHART - 2 -->
+                    <div class="diagramma-3">
+
+                        <div class="diagramma-title-3">
+                            <div class="diagramma-titles-3">
+                                <h2>Назорат улчиш қурилмалар</h2>
+                                <div class="diagramma-line-3"></div>
+                            </div>
+                            <div class="diagramma-line-4"></div>
+                        </div>
+
+                        <div class="diagramma-nav-3">
+                            <ul class="diagramma-ul-3">
+                                <li class="diagramma-li-3"><a href="#!" class="diagramma-link-3">Охангарон</a></li>
+                                <li class="diagramma-li-3"><a href="#!" class="diagramma-link-3">Сардоба+</a></li>
+                                <li class="diagramma-li-3"><a href="#!" class="diagramma-link-3">Ҳисорак+</a></li>
+                                <li class="diagramma-li-3"><a href="#!" class="diagramma-link-3">Тўполанг тунел</a>
+                                </li>
+
+                                <div class="diagramma-left-3"></div>
+                                <div class="diagramma-right-3"></div>
+                            </ul>
+                        </div>
+
+                        <div class="diagramma-chart-2">
+                            <canvas id="chart2" width="569px" height="374px"></canvas>
+                        </div>
+
+                    </div>
+
+                    <div class="diagramma-4">
+                        <div class="diagramma-title-4">
+                            <div class="diagramma-titles-4">
+                                <h2>Сейсмология</h2>
+                                <div class="diagramma-line-4"></div>
+                            </div>
+                            <div class="diagramma-line-5"></div>
+                        </div>
+
+                        <div class="diagramma-4-video">
+                            <video width="580px" height="386px" autoplay loop>
+                                <source src="../images/Dashboard/chart-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="diagramma-middle-line-3"></div>
+                    </div>
+
+                    <div class="diagramma-5">
+                        <div class="diagramma-title-5">
+                            <div class="diagramma-titles-5">
+                                <h2>Ўзбеккосмос</h2>
+                                <div class="diagramma-line-5"></div>
+                            </div>
+                            <div class="diagramma-line-6"></div>
+                        </div>
+
+                        <div class="diagramma-5-video">
+                            <div class="diagramma-5-videos">
+                                <img src="../images/Dashboard/Dashboard-5-1.gif" alt="">
+                                <video autoplay loop src="../images/Dashboard/Dashboard-5-2.mp4"></video>
+                            </div>
+                            <video autoplay loop src="../images/Dashboard/Dashboard-5-33.mp4"></video>
+                        </div>
+
+                        <div class="diagramma-middle-line-4"></div>
+                    </div>
+
+                    <div class="diagramma-6">
+
+                        <div class="diagramma-title-6">
+                            <div class="diagramma-titles-6">
+                                <h2>Об-хаво</h2>
+                                <div class="diagramma-line-6"></div>
+                            </div>
+                            <div class="diagramma-line-7"></div>
+                        </div>
+
+                        <div class="diagramma-6-weather">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="d-6-w-tr" colspan="1" rowspan="2">Вилоятлар номлари</th>
+                                        <th class="d-6-w-tr" colspan="8">Хаво харорати</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th colspan="2">12.07.2024</th>
+                                        <th colspan="2">13.07.2024</th>
+                                        <th colspan="2">14.07.2024</th>
+                                        <th colspan="2">15.07.2024</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <th>Ташкент</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="d-6-w-th-color">Ташкентская обл</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Самаркандская обл</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="d-6-w-th-color">Кашкадарьинская обл</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Навоийская обл</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="d-6-w-th-color">Сурхандарьинская обл</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Хорезмская обл</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="d-6-w-th-color">Наманганская обл</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Джизакская обл</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="d-6-w-th-color">Ферганская обл</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                        <th class="d-6-w-th-color">+13°C</th>
+                                        <th class="d-6-w-th-color">-3°C</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Сырдарьинская обл</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                        <th>+13°C</th>
+                                        <th>-3°C</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>

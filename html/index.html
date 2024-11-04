@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тизимга кириш</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="login-header">
+        <div class="login-container">
+            <div class="login">
+                <div class="login-logo">
+                    <img src="../images/login-img/logo.png" alt="">
+                </div>
+
+                <div class="login-password">
+                    <div class="bottom-left"></div>
+                    <div class="bottom-right"></div>
+                    <h4 class="login-title">Тизимга кириш учун <br>логин ва паролни киритинг</h4>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" id="login" placeholder="Логин" class="inputs">
+                            <span class="icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+
+                        </div>
+
+                        <form action="/login" method="post" id="login form">
+                            <div class="input-group">
+                                <input type="password" id="password" name="password" placeholder="Пароль"
+                                    class="inputs innoco">
+                                <i class="fa-solid fa-eye" id="show-password"></i>
+
+                            </div>
+                        </form>
+
+                        <button type="submit" class="login-btn">Тизимга кириш</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <a href="dashboard.html" class="link">Dashboard</a>
+
+</body>
+</html>

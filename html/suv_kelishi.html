@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сувнинг келиши, м3/cек</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+
+                <ul class="navbar-ul">
+
+                    <div class="circle-menu">
+                        <a href="#!" class="cirle-link"><img src="../images/Dashboard/icon-menu.svg" alt=""></a>
+                    </div>
+
+                    <li class="navbar-li"><a href="#!" class="navbar-link">Главная</a></li>
+                    <li class="navbar-li"><a href="#!" class="navbar-link">Гидрометрия</a></li>
+                    <li class="navbar-li"><a href="#!" class="navbar-link">Modsnow</a></li>
+                    <li class="navbar-li"><a href="#!" class="navbar-link">Погода</a></li>
+                    <li class="navbar-li"><a href="#!" class="navbar-link">Нормативные документы</a></li>
+                </ul>
+
+
+                <div class="navbar-logo">
+                    <a href="#!"><img src="../images/Dashboard/logo.png" alt=""></a>
+                </div>
+
+
+                <div class="navbar-date">
+                    <a href="#!" class="navbar-dates">08.06.2024</a>
+                    <a href="#!" class="navbar-dates">15:04:39</a>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="suv_chart">
+
+
+
+                <div class="suv_kelishi-1">
+
+                    <div class="suv_titles">
+                        <div class="suv_title">
+                            <h2>Сувнинг келиши, м3/сек</h2>
+                            <div class="suv_line-1"></div>
+                        </div>
+                        <div class="suv_line-2"></div>
+                    </div>
+
+                    <div class="suv_chart-1">
+                        <canvas id="chart3" width="873px" height="397px"></canvas>
+                    </div>
+
+                    <div class="suv-middle-line"></div>
+                </div>
+
+
+
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="../JavaScript/suv-charts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+.main {
+    height: 1000px;
+
+    .suv_chart {
+        width: 875px;
+        padding-top: 64px;
+
+        .suv_kelishi-1 {
+
+            .suv_titles {
+
+                .suv_title {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    gap: 6px;
+
+                    h2 {
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 18px;
+                        color: #01F5F5;
+                    }
+
+                    .suv_line-1 {
+                        position: relative;
+                        width: 692px;
+                        height: 1px;
+                        background: #01F5F5;
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 5px;
+                            height: 5px;
+                            top: -2px;
+                            left: 0;
+                            box-sizing: border-box;
+                            background: #01F5F5;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            width: 5px;
+                            height: 5px;
+                            top: -2px;
+                            right: 0;
+                            box-sizing: border-box;
+                            background: #01F5F5;
+                        }
+                    }
+                }
+
+                .suv_line-2 {
+                    position: relative;
+                    width: 870px;
+                    height: 1px;
+                    margin-bottom: 25px;
+                    background: #B8B8B8;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        top: -2px;
+                        left: 0;
+                        box-sizing: border-box;
+                        background: #B8B8B8;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        top: -2px;
+                        right: 0;
+                        box-sizing: border-box;
+                        background: #B8B8B8;
+                    }
+                }
+            }
+        }
+    }
+}

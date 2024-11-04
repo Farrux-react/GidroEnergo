@@ -1,0 +1,916 @@
+.header {
+    width: 100%;
+    background: #0C0C0C linear-gradient(0deg, rgba(29, 28, 28, 0.60) -29.1%, rgba(8, 14, 15, 0.60) 100%);
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 53px;
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #01F5F5;
+
+        .navbar-ul {
+            display: flex;
+            gap: 20px;
+            margin-top: 18px;
+            margin-bottom: 17px;
+
+            .circle-menu {
+
+                .cirle-link {
+
+                    img {
+                        width: 12px;
+                    }
+                }
+            }
+
+            .navbar-li {
+
+                .navbar-link {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #01F5F5;
+                    }
+                }
+            }
+        }
+
+        .navbar-logo {
+            width: 681px;
+            height: 82px;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            padding-top: 25px;
+            transform: translate(-50%, -50%);
+            background: url(../../images/Dashboard/navbar-bg.png) no-repeat center;
+            filter: drop-shadow(0px 1px 1px #01F5F5);
+
+            img {
+                width: 292px;
+                height: 32px;
+            }
+        }
+
+        .navbar-date {
+            margin-top: 18px;
+            margin-bottom: 17px;
+
+            .navbar-dates {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.main {
+    background: url(../../images/Dashboard/Point.png);
+    background-color: #000;
+
+    .statistic {
+        background-color: #000;
+
+        .statistics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            .diagramma-1 {
+                position: relative;
+                width: 574px;
+                padding-top: 71px;
+
+                .diagramma-title {
+
+                    .diagramma-titles {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        h2 {
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 18px;
+                            margin-bottom: 8px;
+                            color: #01F5F5;
+                        }
+
+                        .diagramma-line-1 {
+                            position: relative;
+                            width: 396px;
+                            height: 1px;
+                            background: #01F5F5;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                left: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                right: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+                        }
+                    }
+
+                    .diagramma-line-2 {
+                        position: relative;
+                        width: 573px;
+                        height: 1px;
+                        background: #B8B8B8;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            left: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            right: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+                    }
+                }
+
+                .diagramma-nav {
+                    margin-bottom: 16px;
+
+                    .diagramma-ul {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .diagramma-li {
+                            position: relative;
+                            margin-top: 20px;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 9px;
+                                height: 9px;
+                                top: -2px;
+                                left: 0;
+                                box-sizing: border-box;
+                                border-top: 1px solid #01F5F5;
+                                border-left: 1px solid #01F5F5;
+                                z-index: 999;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 9px;
+                                height: 9px;
+                                top: -2px;
+                                right: 0;
+                                box-sizing: border-box;
+                                border-top: 1px solid #01F5F5;
+                                border-right: 1px solid #01F5F5;
+                            }
+
+                            .diagramma-link {
+                                position: relative;
+                                padding: 6px 20px;
+                                font-size: 12px;
+                                font-weight: 600;
+                                line-height: 18px;
+                                color: #0ff;
+                                transition: .5s;
+                                box-shadow: 3px 4px 0px 0px rgba(1, 245, 245, 0.15);
+                                background: #014A67;
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    width: 9px;
+                                    height: 9px;
+                                    bottom: 0px;
+                                    left: 0;
+                                    box-sizing: border-box;
+                                    border-bottom: 1px solid #01F5F5;
+                                    border-left: 1px solid #01F5F5;
+                                }
+
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    width: 9px;
+                                    height: 9px;
+                                    bottom: 0;
+                                    right: 0;
+                                    box-sizing: border-box;
+                                    border-bottom: 1px solid #01F5F5;
+                                    border-right: 1px solid #01F5F5;
+                                }
+
+                                &:hover {
+                                    color: #000;
+                                    background: #01F5F5;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .diagramma-middle-line-1 {
+                    position: absolute;
+                    top: 110px;
+                    right: -26px;
+                    width: 1px;
+                    height: 424px;
+                    background: #024F4F;
+                }
+            }
+
+            .diagramma-2 {
+                position: relative;
+                width: 572px;
+                margin-top: 71px;
+                margin-left: 50px;
+
+                .diagramma-title-2 {
+
+                    .diagramma-titles-2 {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        h2 {
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 18px;
+                            margin-bottom: 8px;
+                            color: #01F5F5;
+                        }
+
+                        .diagramma-line-2 {
+                            position: relative;
+                            width: 485px;
+                            height: 1px;
+                            background: #01F5F5;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                left: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                right: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+                        }
+                    }
+
+                    .diagramma-line-3 {
+                        position: relative;
+                        width: 571px;
+                        height: 1px;
+                        background: #B8B8B8;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            left: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            right: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+                    }
+                }
+
+                .diagramma-2-statistics {
+
+                    .progress-container {
+                        max-width: 571px;
+                        border-radius: 8px;
+
+                        .progress-item {
+                            margin-bottom: 16px;
+
+                            .progress-header {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: 10px;
+                                margin-bottom: 8px;
+                                color: #0FF;
+
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .progress-blocks {
+                                display: flex;
+                                gap: 2px;
+
+                                .block {
+                                    width: 9px;
+                                    height: 13px;
+                                    margin-right: 2px;
+                                    border-radius: 1px;
+
+                                    &.filled {
+                                        background-color: #0FF;
+                                    }
+
+                                    &.empty {
+                                        background-color: #014A67;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .diagramma-middle-line-2 {
+                    position: absolute;
+                    top: 39px;
+                    right: -25px;
+                    width: 1px;
+                    height: 424px;
+                    background: #024F4F;
+                }
+            }
+
+            .diagramma-3 {
+                position: relative;
+                width: 572px;
+                margin-top: 71px;
+                margin-left: 50px;
+
+                .diagramma-title-3 {
+
+                    .diagramma-titles-3 {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        h2 {
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 18px;
+                            margin-bottom: 8px;
+                            color: #01F5F5;
+                        }
+
+                        .diagramma-line-3 {
+                            position: relative;
+                            width: 364px;
+                            height: 1px;
+                            background: #01F5F5;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                left: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                right: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+                        }
+                    }
+
+                    .diagramma-line-4 {
+                        position: relative;
+                        width: 571px;
+                        height: 1px;
+                        background: #B8B8B8;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            left: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            right: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+                    }
+                }
+
+                .diagramma-nav-3 {
+                    margin-bottom: 16px;
+
+                    .diagramma-ul-3 {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .diagramma-li-3 {
+                            position: relative;
+                            margin-top: 20px;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 9px;
+                                height: 9px;
+                                top: -2px;
+                                left: 0;
+                                box-sizing: border-box;
+                                border-top: 1px solid #01F5F5;
+                                border-left: 1px solid #01F5F5;
+                                z-index: 999;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 9px;
+                                height: 9px;
+                                top: -2px;
+                                right: 0;
+                                box-sizing: border-box;
+                                border-top: 1px solid #01F5F5;
+                                border-right: 1px solid #01F5F5;
+                            }
+
+                            .diagramma-link-3 {
+                                position: relative;
+                                padding: 6px 30px;
+                                font-size: 12px;
+                                font-weight: 600;
+                                line-height: 18px;
+                                color: #0ff;
+                                transition: .5s;
+                                box-shadow: 3px 4px 0px 0px rgba(1, 245, 245, 0.15);
+                                background: #014A67;
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    width: 9px;
+                                    height: 9px;
+                                    bottom: 0px;
+                                    left: 0;
+                                    box-sizing: border-box;
+                                    border-bottom: 1px solid #01F5F5;
+                                    border-left: 1px solid #01F5F5;
+                                }
+
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    width: 9px;
+                                    height: 9px;
+                                    bottom: 0;
+                                    right: 0;
+                                    box-sizing: border-box;
+                                    border-bottom: 1px solid #01F5F5;
+                                    border-right: 1px solid #01F5F5;
+                                }
+
+                                &:hover {
+                                    color: #000;
+                                    background: #01F5F5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .diagramma-4 {
+                position: relative;
+                width: 580px;
+                margin-top: 40px;
+
+                .diagramma-title-4 {
+
+                    .diagramma-titles-4 {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        h2 {
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 18px;
+                            margin-bottom: 8px;
+                            color: #01F5F5;
+                        }
+
+                        .diagramma-line-4 {
+                            position: relative;
+                            width: 473px;
+                            height: 1px;
+                            background: #01F5F5;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                left: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                right: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+                        }
+                    }
+
+                    .diagramma-line-5 {
+                        position: relative;
+                        width: 572px;
+                        height: 1px;
+                        background: #B8B8B8;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            left: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            right: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+                    }
+                }
+
+                .diagramma-middle-line-3 {
+                    position: absolute;
+                    top: 50px;
+                    right: -20px;
+                    width: 1px;
+                    height: 370px;
+                    background: #024F4F;
+                }
+
+                .diagramma-4-video {
+                    margin-top: 22px;
+                }
+            }
+
+            .diagramma-5 {
+                position: relative;
+                width: 580px;
+                margin-top: 40px;
+                margin-left: 50px;
+
+                .diagramma-title-5 {
+
+                    .diagramma-titles-5 {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        h2 {
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 18px;
+                            margin-bottom: 8px;
+                            color: #01F5F5;
+                        }
+
+                        .diagramma-line-5 {
+                            position: relative;
+                            width: 477px;
+                            height: 1px;
+                            background: #01F5F5;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                left: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                right: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+                        }
+                    }
+
+                    .diagramma-line-6 {
+                        position: relative;
+                        width: 572px;
+                        height: 1px;
+                        background: #B8B8B8;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            left: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            right: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+                    }
+                }
+
+                .diagramma-5-video {
+                    margin-top: 20px;
+                    margin-left: 15px;
+
+                    .diagramma-5-videos {
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 248px;
+                            height: 167px;
+                            margin-right: 47px;
+                        }
+
+                        video {
+                            width: 248px;
+                            height: 167px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    video {
+                        width: 543px;
+                        height: 178px;
+                        object-fit: cover;
+                    }
+                }
+
+                .diagramma-middle-line-4 {
+                    position: absolute;
+                    top: 50px;
+                    right: -17px;
+                    width: 1px;
+                    height: 370px;
+                    background: #024F4F;
+                }
+            }
+
+            .diagramma-6 {
+                width: 574px;
+                margin-top: 40px;
+                margin-left: 50px;
+
+                .diagramma-title-6 {
+
+                    .diagramma-titles-6 {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        h2 {
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 18px;
+                            margin-bottom: 8px;
+                            color: #01F5F5;
+                        }
+
+                        .diagramma-line-6 {
+                            position: relative;
+                            width: 500px;
+                            height: 1px;
+                            background: #01F5F5;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                left: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 5px;
+                                top: -2px;
+                                right: -2px;
+                                box-sizing: border-box;
+                                border: 1px solid #01F5F5;
+                                background: #01F5F5;
+                            }
+                        }
+                    }
+
+                    .diagramma-line-7 {
+                        position: relative;
+                        width: 570px;
+                        height: 1px;
+                        background: #B8B8B8;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            left: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 5px;
+                            top: -2px;
+                            right: -2px;
+                            box-sizing: border-box;
+                            background: #B8B8B8;
+                        }
+                    }
+                }
+
+                .diagramma-6-weather {
+                    width: 574px;
+                    margin-top: 13px;
+
+                    table {
+
+                        thead {
+
+                            tr {
+
+                                .d-6-w-tr {
+                                    border-top: 2px solid #01F5F5;
+
+                                    &:nth-child(1) {
+                                        padding: 26px 34px 27px 35px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        padding: 9px 0 10px;
+                                    }
+                                }
+
+                                th {
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    line-height: 18px;
+                                    padding: 7px 0;
+                                    color: #01F5F5;
+                                    background: rgba(6, 102, 132, 0.50);
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                th {
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    padding: 6px 8px 5px;
+                                    color: #fff;
+                                    background: rgba(2, 63, 82, 0.50);
+
+                                    &:nth-child(1) {
+                                        padding: 0 34px 0;
+                                    }
+                                }
+
+                                .d-6-w-th-color {
+                                    background: rgba(2, 63, 82, 0.60);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
