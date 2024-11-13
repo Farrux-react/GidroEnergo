@@ -16,18 +16,19 @@
                     display: flex;
                     align-items: center;
                     margin-bottom: 10px;
-                    gap: 6px;
+                    gap: 10px;
 
                     h2 {
                         font-size: 15px;
                         font-weight: 600;
                         line-height: 18px;
+                        white-space: nowrap;
                         color: #01F5F5;
                     }
 
                     .suv_line-1 {
                         position: relative;
-                        width: 692px;
+                        width: 100%;
                         height: 1px;
                         background: #01F5F5;
 
@@ -57,7 +58,7 @@
 
                 .suv_line-2 {
                     position: relative;
-                    width: 870px;
+                    width: 100%;
                     height: 1px;
                     margin-bottom: 25px;
                     background: #B8B8B8;
@@ -95,261 +96,14 @@
                 background: #024F4F;
                 opacity: 0.6;
             }
-        }
 
-        .suv_kelishi-2 {
-
-            .suv_titles-2 {
-
-                .suv_title-2 {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 10px;
-                    gap: 6px;
-
-                    h2 {
-                        font-size: 15px;
-                        font-weight: 600;
-                        line-height: 18px;
-                        color: #01F5F5;
-                    }
-
-                    .suv_line-3 {
-                        position: relative;
-                        width: 734px;
-                        height: 1px;
-                        background: #01F5F5;
-
-                        &::before {
-                            position: absolute;
-                            content: '';
-                            width: 5px;
-                            height: 5px;
-                            top: -2px;
-                            left: 0;
-                            box-sizing: border-box;
-                            background: #01F5F5;
-                        }
-
-                        &::after {
-                            position: absolute;
-                            content: '';
-                            width: 5px;
-                            height: 5px;
-                            top: -2px;
-                            right: 0;
-                            box-sizing: border-box;
-                            background: #01F5F5;
-                        }
-                    }
-                }
-
-                .suv_line-4 {
-                    position: relative;
-                    width: 900px;
-                    height: 1px;
-                    margin-bottom: 25px;
-                    background: #B8B8B8;
-
-                    &::before {
-                        position: absolute;
-                        content: '';
-                        width: 5px;
-                        height: 5px;
-                        top: -2px;
-                        left: 0;
-                        box-sizing: border-box;
-                        background: #B8B8B8;
-                    }
-
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        width: 5px;
-                        height: 5px;
-                        top: -2px;
-                        right: 0;
-                        box-sizing: border-box;
-                        background: #B8B8B8;
-                    }
-                }
-            }
-        }
-
-        .suv_kelishi-3 {
-            position: relative;
-            margin-top: 20px;
-
-            .suv_titles-3 {
-
-                .suv_title-3 {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 10px;
-                    gap: 6px;
-
-                    h2 {
-                        font-size: 15px;
-                        font-weight: 600;
-                        line-height: 18px;
-                        color: #01F5F5;
-                    }
-
-                    .suv_line-5 {
-                        position: relative;
-                        width: 775px;
-                        height: 1px;
-                        background: #01F5F5;
-
-                        &::before {
-                            position: absolute;
-                            content: '';
-                            width: 5px;
-                            height: 5px;
-                            top: -2px;
-                            left: 0;
-                            box-sizing: border-box;
-                            background: #01F5F5;
-                        }
-
-                        &::after {
-                            position: absolute;
-                            content: '';
-                            width: 5px;
-                            height: 5px;
-                            top: -2px;
-                            right: 0;
-                            box-sizing: border-box;
-                            background: #01F5F5;
-                        }
-                    }
-                }
-
-                .suv_line-6 {
-                    position: relative;
-                    width: 870px;
-                    height: 1px;
-                    margin-bottom: 25px;
-                    background: #B8B8B8;
-
-                    &::before {
-                        position: absolute;
-                        content: '';
-                        width: 5px;
-                        height: 5px;
-                        top: -2px;
-                        left: 0;
-                        box-sizing: border-box;
-                        background: #B8B8B8;
-                    }
-
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        width: 5px;
-                        height: 5px;
-                        top: -2px;
-                        right: 0;
-                        box-sizing: border-box;
-                        background: #B8B8B8;
-                    }
-                }
+            &:nth-child(3) {
+                padding-top: 25px;
+                margin-bottom: 20px;
             }
 
-            .suv_chart-3 {
-                width: 873px;
-                height: 397px;
-            }
-
-            .suv-middle-line {
-                position: absolute;
-                top: 60px;
-                right: 9px;
-                width: 1px;
-                height: 398px;
-                background: #024F4F;
-                opacity: 0.6;
-            }
-        }
-
-        .suv_kelishi-4 {
-            margin-top: 20px;
-            margin-bottom: 50px;
-
-            .suv_titles-4 {
-
-                .suv_title-4 {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 10px;
-                    gap: 6px;
-
-                    h2 {
-                        font-size: 15px;
-                        font-weight: 600;
-                        line-height: 18px;
-                        color: #01F5F5;
-                    }
-
-                    .suv_line-7 {
-                        position: relative;
-                        width: 768px;
-                        height: 1px;
-                        background: #01F5F5;
-
-                        &::before {
-                            position: absolute;
-                            content: '';
-                            width: 5px;
-                            height: 5px;
-                            top: -2px;
-                            left: 0;
-                            box-sizing: border-box;
-                            background: #01F5F5;
-                        }
-
-                        &::after {
-                            position: absolute;
-                            content: '';
-                            width: 5px;
-                            height: 5px;
-                            top: -2px;
-                            right: 0;
-                            box-sizing: border-box;
-                            background: #01F5F5;
-                        }
-                    }
-                }
-
-                .suv_line-8 {
-                    position: relative;
-                    width: 900px;
-                    height: 1px;
-                    margin-bottom: 25px;
-                    background: #B8B8B8;
-
-                    &::before {
-                        position: absolute;
-                        content: '';
-                        width: 5px;
-                        height: 5px;
-                        top: -2px;
-                        left: 0;
-                        box-sizing: border-box;
-                        background: #B8B8B8;
-                    }
-
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        width: 5px;
-                        height: 5px;
-                        top: -2px;
-                        right: 0;
-                        box-sizing: border-box;
-                        background: #B8B8B8;
-                    }
-                }
+            &:nth-child(4) {
+                padding-top: 25px;
             }
         }
     }
