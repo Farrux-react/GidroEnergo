@@ -1,0 +1,211 @@
+.main {
+
+    .nazorat {
+        padding-top: 50px;
+
+        .nazorat-titles {
+
+            .nazorat-title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                gap: 10px;
+
+                h2 {
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    white-space: nowrap;
+                    color: #01F5F5;
+                }
+
+                .nazorat-line {
+                    position: relative;
+                    width: 100%;
+                    height: 1px;
+                    background: #01F5F5;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        top: -2px;
+                        left: 0;
+                        box-sizing: border-box;
+                        background: #01F5F5;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        top: -2px;
+                        right: 0;
+                        box-sizing: border-box;
+                        background: #01F5F5;
+                    }
+                }
+            }
+
+            .nazorat-line-2 {
+                position: relative;
+                width: 100%;
+                height: 1px;
+                margin-bottom: 10px;
+                background: #B8B8B8;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    top: -2px;
+                    left: 0;
+                    box-sizing: border-box;
+                    background: #B8B8B8;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    top: -2px;
+                    right: 0;
+                    box-sizing: border-box;
+                    background: #B8B8B8;
+                }
+            }
+
+            .nazorat-navbar {
+                .nazorat-ul {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .nazorat-li {
+                        position: relative;
+                        margin-top: 15px;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 9px;
+                            height: 9px;
+                            top: -9px;
+                            left: 0;
+                            box-sizing: border-box;
+                            border-top: 1px solid #01F5F5;
+                            border-left: 1px solid #01F5F5;
+                            z-index: 999;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 9px;
+                            height: 9px;
+                            top: -9px;
+                            right: 0;
+                            box-sizing: border-box;
+                            border-top: 1px solid #01F5F5;
+                            border-right: 1px solid #01F5F5;
+                        }
+
+                        .nazorat-link {
+                            position: relative;
+                            padding: 11px 74px 10px;
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 18px;
+                            transition: .5s;
+                            color: #0FF;
+                            background: #003C54;
+                            box-shadow: 3px 4px 0px 0px rgba(1, 245, 245, 0.15);
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 9px;
+                                height: 9px;
+                                bottom: 0px;
+                                left: 0;
+                                box-sizing: border-box;
+                                border-bottom: 1px solid #01F5F5;
+                                border-left: 1px solid #01F5F5;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 9px;
+                                height: 9px;
+                                bottom: 0;
+                                right: 0;
+                                box-sizing: border-box;
+                                border-bottom: 1px solid #01F5F5;
+                                border-right: 1px solid #01F5F5;
+                            }
+
+                            &:hover {
+                                background: #014A67;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .nazorat-charts {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+
+            .nazorat-chart-1 {
+                width: 1200px;
+                height: 830px;
+                margin-bottom: 37px;
+            }
+
+            .nazorat-statistics {
+
+                .nazorat-table {
+                    width: 604px;
+                    text-align: center;
+
+                    .nazorat-thead tr {
+
+                        td {
+                            padding: 3.4px 0;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            backdrop-filter: blur(2px);
+                            color: #01F5F5;
+                            background-color: rgba(6, 102, 132, 0.50);
+
+                        }
+
+                        .nazorat-top-line {
+                            border-top: 2px solid #01F5F5;
+                        }
+                    }
+
+                    .nazorat-tbody tr {
+
+                        td {
+                            padding: 7px 0 6px 0;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            backdrop-filter: blur(2px);
+                            color: #fff;
+                            background: rgba(2, 63, 82, 0.50);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
