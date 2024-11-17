@@ -1,3 +1,4 @@
+// CHART - 7
 const chart7 = new Chart(document.querySelector('#chart7'), {
     type: 'line',
     data: {
