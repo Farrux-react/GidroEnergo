@@ -62,6 +62,7 @@ const chart1 = new Chart(document.querySelector('#chart1'), {
     plugins: [ChartDataLabels],
 });
 
+
 // DIAGRAMMA 2 STATISTICS
 const data = [
     { label: 'Андижон', percentage: 98 },
@@ -117,6 +118,7 @@ function renderProgressBars(data) {
 document.addEventListener('DOMContentLoaded', () => {
     renderProgressBars(data);
 });
+
 
 // CHART - 2
 const chart2 = new Chart(document.querySelector('#chart2'), {
