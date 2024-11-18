@@ -24,6 +24,13 @@
                         line-height: 18px;
                         white-space: nowrap;
                         color: #01F5F5;
+
+                        &:nth-child(1) {
+
+                            a {
+                                color: #01F5F5;
+                            }
+                        }
                     }
 
                     .suv_line-1 {
