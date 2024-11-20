@@ -1,11 +1,11 @@
 .main {
 
-    .kunlik-malumotlar {
+    .oylik-malumot {
 
-        .km-titles {
+        .oy-titles {
             padding-top: 50px;
 
-            .km-title {
+            .oy-title {
                 display: flex;
                 align-items: center;
                 margin-bottom: 10px;
@@ -19,7 +19,7 @@
                     color: #01F5F5;
                 }
 
-                .km-line {
+                .oy-line {
                     position: relative;
                     width: 100%;
                     height: 1px;
@@ -49,7 +49,7 @@
                 }
             }
 
-            .km-line-2 {
+            .oy-line-2 {
                 position: relative;
                 width: 100%;
                 height: 1px;
@@ -80,65 +80,157 @@
             }
         }
 
-        .km-content {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 37px;
+        .oy-navbar {
 
-            .km-content-left {
+            .oy-ul {
+                display: flex;
+                justify-content: space-between;
 
-                .km-table {
-                    width: 1357px;
-                    height: 905px;
+                .oy-li {
+                    position: relative;
                     margin-bottom: 15px;
-                    text-align: center;
 
-                    thead tr {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 9px;
+                        height: 9px;
+                        top: -9px;
+                        left: 0;
+                        box-sizing: border-box;
+                        border-top: 1px solid #01F5F5;
+                        border-left: 1px solid #01F5F5;
+                        z-index: 999;
+                    }
 
-                        th {
-                            padding: 24px 0 26px 0;
-                            font-size: 14px;
-                            font-weight: 500;
-                            backdrop-filter: blur(2px);
-                            color: #01F5F5;
-                            background-color: rgba(6, 102, 132, 0.50);
-                            border-top: 2px solid #01F5F5;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 9px;
+                        height: 9px;
+                        top: -9px;
+                        right: 0;
+                        box-sizing: border-box;
+                        border-top: 1px solid #01F5F5;
+                        border-right: 1px solid #01F5F5;
+                    }
+
+                    .oy-link {
+                        position: relative;
+                        padding: 10px 110px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 18px;
+                        transition: .5s;
+                        color: #0FF;
+                        background: #003C54;
+                        box-shadow: 3px 4px 0px 0px rgba(1, 245, 245, 0.15);
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 9px;
+                            height: 9px;
+                            bottom: 0px;
+                            left: 0;
+                            box-sizing: border-box;
+                            border-bottom: 1px solid #01F5F5;
+                            border-left: 1px solid #01F5F5;
                         }
 
-                        td {
-                            padding: 15px 0;
-                            font-size: 12px;
-                            font-weight: 500;
-                            backdrop-filter: blur(2px);
-                            color: #fff;
-                            background: rgba(2, 63, 82, 0.50);
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 9px;
+                            height: 9px;
+                            bottom: 0;
+                            right: 0;
+                            box-sizing: border-box;
+                            border-bottom: 1px solid #01F5F5;
+                            border-right: 1px solid #01F5F5;
+                        }
 
+                        &:hover {
+                            background: #014A67;
+                        }
+                    }
+                }
+            }
+        }
+
+        .oy-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            padding-bottom: 37px;
+
+            .oy-content-left {
+
+                .oy-table {
+                    width: 1357px;
+                    /* height: 905px; */
+                    margin-bottom: 14px;
+                    text-align: center;
+
+                    thead {
+
+                        tr {
+
+                            th {
+                                height: 39px;
+                                font-size: 14px;
+                                font-weight: 500;
+                                backdrop-filter: blur(2px);
+                                border-top: 2px solid #01F5F5;
+                                color: #01F5F5;
+                                background-color: rgba(6, 102, 132, 0.50);
+                            }
+
+                            .oy-red {
+                                color: #EC0000;
+                            }
+
+                            td {
+                                font-size: 12px;
+                                font-weight: 500;
+                                backdrop-filter: blur(2px);
+                                color: #fff;
+                                background: rgba(2, 63, 82, 0.50);
+                            }
                         }
                     }
 
-                    tbody tr {
-                        .km-red {
-                            color: #EC0000;
-                        }
+                    tbody {
 
-                        td {
-                            font-size: 12px;
-                            font-weight: 400;
-                            line-height: 18px;
-                            backdrop-filter: blur(2px);
-                            color: #fff;
-                            background: rgba(2, 63, 82, 0.50);
+                        tr {
+
+                            .oy-red {
+                                color: #EC0000;
+                            }
+
+                            .oy-table-td-title {
+                                font-size: 16px;
+                            }
+
+                            td {
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 18px;
+                                backdrop-filter: blur(2px);
+                                color: #fff;
+                                background: rgba(2, 63, 82, 0.50);
+                            }
                         }
                     }
                 }
             }
 
-            .km-content-right {
+            .oy-content-right {
                 width: 446px;
 
-                .km-right-titles {
+                .oy-right-titles {
 
-                    .km-right-title {
+                    .oy-right-title {
                         display: flex;
                         align-items: center;
                         margin-bottom: 9px;
@@ -152,7 +244,7 @@
                             color: #01F5F5;
                         }
 
-                        .km-right-line {
+                        .oy-right-line {
                             position: relative;
                             width: 100%;
                             height: 1px;
@@ -182,7 +274,7 @@
                         }
                     }
 
-                    .km-right-line-2 {
+                    .oy-right-line-2 {
                         position: relative;
                         width: 100%;
                         height: 1px;
@@ -213,7 +305,7 @@
                     }
                 }
 
-                .km-map {
+                .oy-map {
                     position: relative;
                     text-align: center;
 
@@ -246,13 +338,13 @@
                     }
                 }
 
-                .km-info-boxs {
+                .oy-info-boxs {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     margin-top: 10px;
                     gap: 8px;
 
-                    .km-bottom-content {
+                    .oy-bottom-content {
                         position: relative;
                         width: 219px;
                         height: 155px;
@@ -282,7 +374,7 @@
                             border-right: 2px solid #01F5F5;
                         }
 
-                        .km-bottom {
+                        .oy-bottom {
 
                             &::before {
                                 content: '';
@@ -308,7 +400,7 @@
                                 border-right: 2px solid #01F5F5;
                             }
 
-                            .km-bottom-info {
+                            .oy-bottom-info {
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
@@ -366,7 +458,7 @@
                         }
                     }
 
-                    .km-bottom-content-2 {
+                    .oy-bottom-content-2 {
                         position: relative;
                         width: 217px;
                         height: 155px;
@@ -374,9 +466,9 @@
                         background: #094056;
                         box-shadow: 5px 5px 0px 0px rgba(1, 245, 245, 0.10);
 
-                        .km-bottom-2 {
+                        .oy-bottom-2 {
 
-                            .km-bottom-info-2 {
+                            .oy-bottom-info-2 {
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
